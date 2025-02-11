@@ -1,0 +1,231 @@
+/* CSS code for the navigation bar */
+.custom-navbar {
+    background-color: rgb(177, 241, 50);
+    color: black;
+}
+
+.custom-navbar .nav-link {
+    color: black;
+}
+
+.custom-navbar .nav-link.active {
+    color: black;
+}
+
+.custom-navbar .navbar-brand {
+    color: black;
+}
+
+.custom-navbar .navbar-toggler {
+    color: black;
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: skyblue;
+    color: black;
+}
+
+.custom-navbar .dropdown-item {
+    color: black;
+}
+
+
+/* Additional CSS for the navigation bar */
+.custom-navbar {
+    background-color: yellowgreen !important;
+    color: black !important;
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .nav-link.active,
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-toggler {
+    color: black !important;
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: yellowgreen !important;
+    color: black !important;
+}
+
+.custom-navbar .dropdown-item {
+    color: black !important;
+}
+.btn-primary{
+    background-color: yellowgreen;
+    color:black!important;
+    border-color: white;
+}
+.pt-5{
+    color:white!important;
+}
+body{
+   background-color: lightcyan!important;
+}
+.d-block{
+    border-radius:50%!important;
+}
+/* CSS for zoom-in effect on hover */
+/* CSS for zoom-in effect on hover */
+.card-cover, .img-fluid {
+    transition: transform 0.3s ease;
+}
+
+.card-cover:hover, .img-fluid:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    cursor: pointer; /* Hand cursor on hover */
+}
+/* Chatbot Icon */
+#chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#chatbot-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Chatbot Container */
+#chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background: lightcyan!important;
+    border-radius: 10px;
+    box-shadow: lightcyan;
+    overflow: hidden;
+}
+
+/* Chatbot Header */
+#chat-header {
+    background: yellowgreen;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-header h4 {
+    margin: 0;
+}
+
+#chat-header button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Chatbot Body */
+#chat-body {
+    height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+    background: white;
+}
+
+/* Chatbot Footer (Dark Theme) */
+#chat-footer {
+    display: flex!important;
+    border-top: 1px solid white!important; /* Darker border for better contrast */
+    padding: 10px!important;
+    background-color: white!important; /* Dark background */
+}
+
+#chat-input {
+    flex: 1!important;
+    padding: 8px!important;
+    border: none!important;
+    outline: none!important;
+    background-color: black!important; /* Darker input field */
+    color: white!important; /* White text for visibility */
+    border-radius: 5px!important;
+}
+
+#chat-input::placeholder {
+    color: white!important; /* Light grey placeholder text */
+}
+
+#chat-send {
+    background: yellowgreen!important; /* Dark button background */
+    color: black!important; /* White text */
+    border: none!important;
+    padding: 8px 15px!important;
+    cursor: pointer!important;
+    border-radius: 5px!important;
+    transition: background 0.3s ease!important;
+}
+
+#chat-send:hover {
+    background: #666!important; /* Slightly lighter on hover */
+}
+
+  nav {
+    display: flex;
+    justify-content: space-between!important;
+    align-items: center!important;
+    background: #fff!important;
+    padding: 10px 20px!important;
+    
+}
+
+.nav-links, .nav-auth {
+    list-style: none!important;
+    display: flex!important;
+    gap: 15px!important;
+    padding: 0!important;
+}
+
+.nav-auth {
+    margin-left: auto; /* Push Login & Sign Up to the right */
+}
+
+.signup-btn {
+    background-color: skyblue!important;
+    color: white!important;
+    padding: 5px 10px!important;;
+    border-radius: 5px!important;;
+    text-decoration: none!important;
+}
+.login-btn {
+    background-color: skyblue!important;
+    color: white!important;
+    padding: 5px 10px!important;;
+    border-radius: 5px!important;;
+    text-decoration: none!important;
+}
+.navbar-nav{
+    align-items: flex-end;
+}
+body {
+    background-image: url(""); /* Replace with your image path */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-size: cover;  /* Best for full-screen backgrounds */
+    background-size: contain; /* Ensures full image visibility without stretching */
+    background-size: 100% 100%; /* This stretches the image and may cause blurriness */
+    background-color: lightcyan!important;
+  }
+  h1,h2,h3,h4,h5,h6,p,a{
+    color:black!important;
+  }
+  .navbar-brand{
+    color: white !important;
+  }
+h4{
+    color:black!important;
+}
+.flex-lg-row-reverse{
+    padding-left:50px;
+}

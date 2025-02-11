@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitSphere | Signup</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    
+    <style>
+        /* Background with Yellow-Green Gradient */
+        body {
+            background: yellowgreen;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial', sans-serif;
+            padding-bottom: 100px;
+            padding-left: 70px;
+            padding-top:0.5px;
+            height:500px
+        }
+
+        /* Centered Form */
+        .form-container {
+            max-width: 500px;
+            width: 100%;
+            padding: 50px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            
+        }
+
+        .form-container h4 {
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: blue;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: blue;
+        }
+        .d-grid{
+    padding-left:180px;
+}
+.col-lg-6{
+    border-right: 700px;
+    padding-top:650px
+} 
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h4 class="mb-4">Signup for FitSphere</h4>
+        <form id="submit-to-google-sheet">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input class="form-control" type="password" name="password" id="password" placeholder="Create a password" required />
+            </div>
+            <div class="form-group">
+                <label for="contact_number">Contact Number:</label>
+                <input class="form-control" type="text" name="contact_number" id="contact_number" placeholder="Enter your number" required />
+            </div>
+          
+           
+            <div class="form-group form-check">
+                <input class="form-check-input" type="checkbox" id="ex" required />
+                <label class="form-check-label" for="ex">
+                    I agree with the data terms and policies.
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Signup</button>
+        </form>
+    </div>
+
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycbwhyN-h-GjiR9K70DytFJUYaxBB-j2U4G-ihqM6QiKviqSj9hd169RwbGC2TtRmunf3/exec";                    
+        
+        const form = document.forms["submit-to-google-sheet"];
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+            var formData = new FormData(form);
+            var ex = document.getElementById("ex").checked;
+
+            if (ex) {
+                formData.append("ex", "Yes");
+            } else {
+                formData.append("ex", "No");
+            }
+
+            fetch(scriptURL, { method: "POST", body: formData })
+                .then((response) => {
+                    swal("Success", "Your account has been created!", "success");
+                    form.reset();
+                })
+                .catch((error) => {
+                    swal("Error", "Something went wrong. Please try again!", "error");
+                });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+.custom-navbar {
+    background-color: yellowgreen;
+    color: black;
+}
+
+.custom-navbar .nav-link {
+    color: black;
+}
+
+.custom-navbar .nav-link.active {
+    color: black;
+}
+
+.custom-navbar .navbar-brand {
+    color: black;
+}
+
+.custom-navbar .navbar-toggler {
+    color: black;
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: yellowgreen;
+    color: black;
+}
+
+.custom-navbar .dropdown-item {
+    color: black;
+}
+
+
+/* Additional CSS for the navigation bar */
+.custom-navbar {
+    background-color: yellowgreen !important;
+    color: black !important;
+}
+
+.custom-navbar .nav-link,
+.custom-navbar .nav-link.active,
+.custom-navbar .navbar-brand,
+.custom-navbar .navbar-toggler {
+    color: black !important;
+}
+
+.custom-navbar .dropdown-menu {
+    background-color: yellowgreen !important;
+    color: black !important;
+}
+
+.custom-navbar .dropdown-item {
+    color: black !important;
+}
+.btn-primary{
+    background-color: yellowgreen;
+    color:black!important;
+    border-color: blue;
+}
+.pt-5{
+    color:black!important;
+}
+body{
+   background-color: #e6ffe6;
+}
+.d-block{
+    border-radius:50%!important;
+}
+/* CSS for zoom-in effect on hover */
+/* CSS for zoom-in effect on hover */
+.card-cover, .img-fluid {
+    transition: transform 0.3s ease;
+}
+
+.card-cover:hover, .img-fluid:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    cursor: pointer; /* Hand cursor on hover */
+}
+body{
+    background-color:lightcyan!important;
+}
+.fs-2{
+    color:black!important;
+}

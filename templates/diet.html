@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSphere | Diet recommendations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/diet.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <img src="../static/img/care.svg" width="25" height="35">
+        <a class="navbar-brand" href="#">FitSphere</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- Left-aligned menu items -->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="{{url_for('index')}}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Diet recommendations</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('fitness') }}">Fitness management</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('hydration') }}">Hydration reminders</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('quiz') }}">Quiz-challenge</a></li>
+            </ul>
+
+            <!-- Right-aligned Login/Sign Up buttons -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link btn btn-primary text-white" href="{{url_for('login')}}">Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn btn-primary text-white" href="{{url_for('signup')}}">Sign Up</a>
+              </li>
+          </ul>
+          
+        </div>
+    </div>
+</nav>
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="../static/img/dietplanner.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Diet recommendations</h1>
+      <p class="lead">A well-balanced diet is the foundation of good health, affecting energy levels, mental focus, physical fitness, and overall well-being. Diet recommendations help optimize nutrition intake, ensuring the body receives essential nutrients for growth, repair, and disease prevention.</p>
+    </div>
+  </div>
+</div>
+<div class="row align-items-md-stretch">
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-bg-dark rounded-3">
+      <h2>Diet recommendations for Vegetarians</h2>
+      <p>A vegan diet focuses entirely on plant-based foods, eliminating all animal products like meat, dairy, and eggs.A vegan diet is centered around plant-based foods while eliminating all animal-derived products.</p>
+      <a href="{{url_for('form1')}}"><button class="btn btn-outline-light" type="button">Click to register</button></a>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+      <h2>Diet recommendations for Non-vegetarians</h2>
+      <p>A well-balanced fitness plan for women focuses on strength, endurance, flexibility, and overall health, helping in toning muscles, improving metabolism, and enhancing well-being.</p>
+      <a href="{{url_for('form1')}}"><button class="btn btn-outline-secondary" type="button">Click to register</button></a>
+    </div>
+  </div>
+</div>
+<div class="container px-4 py-5" id="icon-grid">
+  <h2 class="pb-2 border-bottom">Why Choose us?</h2>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"> Personalized Nutrition</h3>
+        <p>Tailored meal plans ensure individuals get the right balance of macronutrients (carbs, proteins, and fats) and micronutrients (vitamins and minerals) based on their body type, goals, and lifestyle.
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"> Supports Fitness Goals</h3>
+        <p>Whether it's muscle gain, weight loss, or endurance improvement, diet plans align nutrition with physical activities to optimize results.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Prevents Deficiencies & Health Risks</h3>
+        <p>Proper diet planning ensures adequate intake of essential nutrients like iron, calcium, and vitamin B12, reducing the risk of deficiencies and related health issues.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Enhances Digestion & Metabolism</h3>
+        <p>Balanced diets rich in fiber and hydration support gut health, leading to better digestion, metabolism, and energy levels.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Encourages Sustainable Eating Habits</h3>
+        <p> A structured meal plan promotes consistency, reduces reliance on unhealthy processed foods, and helps in long-term health maintenance.
+
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Expert Guidance</h3>
+        <p> Our AI is developed with input from fitness and nutrition experts, ensuring you get the best advice and recommendations.
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">AI Assistant </h3>
+        <p> It suggests customized workout plans based on their fitness level and preferences.It can be used as an supportive medium during emergency situtation</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Boosts Mental & Physical Well-being </h3>
+        <p>Eating the right foods improves brain function, mood stability, and overall energy levels, contributing to a healthier and more active lifestyle.
+
+          Would you like specific diet recommendations for different fitness goals</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Chatbot Icon -->
+<div id="chatbot-icon" onclick="toggleChatbot()">
+  <img src="../static/img/chatbot.svg" width="50" height="50">
+</div>
+
+<!-- Chatbot Window -->
+<div id="chatbot-container">
+  <div id="chat-header">
+      <h4>MediBuddy</h4>
+      <button onclick="toggleChatbot()">✖</button>
+  </div>
+  <div id="chat-body"></div>
+  <div id="chat-footer">
+      <input type="text" id="chat-input" placeholder="Ask me anything...">
+      <button id="chat-send">Send</button>
+  </div>
+</div>
+
+<!-- Chatbot JavaScript -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const chatBody = document.getElementById("chat-body");
+  const chatInput = document.getElementById("chat-input");
+  const chatSend = document.getElementById("chat-send");
+
+  function addMessage(user, message) {
+      const msgDiv = document.createElement("div");
+      msgDiv.classList.add(user);
+      msgDiv.innerText = message;
+      chatBody.appendChild(msgDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  async function sendMessage() {
+      const userMessage = chatInput.value.trim();
+      if (!userMessage) return;
+
+      addMessage("user", "You: " + userMessage);
+      chatInput.value = "";
+
+      const response = await fetch("http://127.0.0.1:5000/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: userMessage }),
+      });
+
+      const data = await response.json();
+      addMessage("bot", "MediBuddy: " + data.response);
+  }
+
+  chatSend.addEventListener("click", sendMessage);
+  chatInput.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") sendMessage();
+  });
+});
+
+function toggleChatbot() {
+  const chatbot = document.getElementById("chatbot-container");
+  chatbot.style.display = chatbot.style.display === "block" ? "none" : "block";
+}
+</script>
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="{{url_for('about')}}" class="nav-link px-2 text-body-secondary">About us</a></li>
+      <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary">Diet recommendations</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Fitness management</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Hydration remainders</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2025 FitSphere, Inc</p>
+  </footer>
+</div>
+
+
+ 
+         
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>

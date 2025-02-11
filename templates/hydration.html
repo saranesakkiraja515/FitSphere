@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" datab-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitSphere | Hydration remainder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/hydration.css"/>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <img src="../static/img/care.svg" width="25" height="35">
+        <a class="navbar-brand" href="#">FitSphere</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <!-- Left-aligned menu items -->
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="{{url_for('index')}}">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('diet') }}">Diet recommendations</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('fitness') }}">Fitness management</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Hydration reminders</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ url_for('quiz') }}">Quiz-challenge</a></li>
+            </ul>
+
+            <!-- Right-aligned Login/Sign Up buttons -->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link btn btn-primary text-white" href="{{url_for('login')}}">Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link btn btn-primary text-white" href="{{url_for('signup')}}">Sign Up</a>
+              </li>
+          </ul>
+          
+        </div>
+    </div>
+</nav>
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="../static/img/hydrate.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hydration remainders</h1>
+      <p class="lead">Hydration is essential for maintaining overall health, supporting bodily functions, and preventing dehydration. However, many people forget to drink enough water throughout the day. Hydration reminders help track water intake, ensure proper hydration, and prevent health issues caused by dehydration.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a href="{{url_for('form4')}}"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Get hydration remainders frequently</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container px-4 py-5" id="icon-grid">
+  <h2 class="pb-2 border-bottom">Why Choose us?</h2>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Prevents Dehydration</h3>
+        <p>Regular reminders ensure that you drink enough water throughout the day, preventing dehydration, which can cause fatigue, headaches, and dizziness.
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Boosts Energy Levels & Brain Function</h3>
+        <p>Even mild dehydration can lead to poor concentration, mood swings, and reduced memory function. Staying hydrated keeps your brain sharp and improves productivity.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Frequent remainders</h3>
+        <p>Users will get their hydration remainders regularly once they register with us and they will get plan regularly through their mobile number with which they registered with.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Efficient & Effective</h3>
+        <p>Our smart AI ensures your plans are not just tailored to you, but also optimized for maximum efficiency and effectiveness.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Supportive Community</h3>
+        <p>Join a community of like-minded individuals who are on the same journey. Share your progress, exchange tips, and find support every step of the way.
+
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Expert Guidance</h3>
+        <p> Our AI is developed with input from fitness and nutrition experts, ensuring you get the best advice and recommendations.
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">AI Assistant </h3>
+        <p> It suggests customized workout plans based on time interval of getting hydration remainder notifications.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+      <div>
+        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Encourages a Healthy Habit </h3>
+        <p>Hydration reminders create a routine, ensuring you stay consistent in drinking water.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Chatbot Icon -->
+<div id="chatbot-icon" onclick="toggleChatbot()">
+  <img src="../static/img/chatbot.svg" width="50" height="50">
+</div>
+
+<!-- Chatbot Window -->
+<div id="chatbot-container">
+  <div id="chat-header">
+      <h4>MediBuddy</h4>
+      <button onclick="toggleChatbot()">✖</button>
+  </div>
+  <div id="chat-body"></div>
+  <div id="chat-footer">
+      <input type="text" id="chat-input" placeholder="Ask me anything...">
+      <button id="chat-send">Send</button>
+  </div>
+</div>
+
+<!-- Chatbot JavaScript -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const chatBody = document.getElementById("chat-body");
+  const chatInput = document.getElementById("chat-input");
+  const chatSend = document.getElementById("chat-send");
+
+  function addMessage(user, message) {
+      const msgDiv = document.createElement("div");
+      msgDiv.classList.add(user);
+      msgDiv.innerText = message;
+      chatBody.appendChild(msgDiv);
+      chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  async function sendMessage() {
+      const userMessage = chatInput.value.trim();
+      if (!userMessage) return;
+
+      addMessage("user", "You: " + userMessage);
+      chatInput.value = "";
+
+      const response = await fetch("http://127.0.0.1:5000/chat", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message: userMessage }),
+      });
+
+      const data = await response.json();
+      addMessage("bot", "MediBuddy: " + data.response);
+  }
+
+  chatSend.addEventListener("click", sendMessage);
+  chatInput.addEventListener("keypress", function (event) {
+      if (event.key === "Enter") sendMessage();
+  });
+});
+
+function toggleChatbot() {
+  const chatbot = document.getElementById("chatbot-container");
+  chatbot.style.display = chatbot.style.display === "block" ? "none" : "block";
+}
+</script>
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="{{url_for('about')}}" class="nav-link px-2 text-body-secondary">About us</a></li>
+      <li class="nav-item"><a href="" class="nav-link px-2 text-body-secondary">Diet recommendations</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Fitness management</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Hydration remainders</a></li>
+    </ul>
+    <p class="text-center text-body-secondary">© 2025 FitSphere, Inc</p>
+  </footer>
+</div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+</body>
+</html>
